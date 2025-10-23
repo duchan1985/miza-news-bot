@@ -61,8 +61,6 @@ def check_news():
 # =========================
 
 if __name__ == "__main__":
-# Gửi thông báo khi bot khởi động thành công
-    send_telegram_message("✅ Bot Miza đang chạy thành công trên Render!")
     while True:
         check_news()
         print(f"⏳ Chờ {CHECK_INTERVAL/60} phút...")
